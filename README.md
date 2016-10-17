@@ -9,7 +9,7 @@
              )](https://developer.apple.com/swift) [![Cocoapod](https://img.shields.io/cocoapods/v/OAuthRxSwift.svg?style=flat)](http://cocoadocs.org/docsets/OAuthRxSwift/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Utility methods to produce `SignalProducer` from [ReactiveSwift](https://github.com/ReactiveCocoa/ReactiveSwift) framework when authentifying  with [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift).
+Utility methods to produce `Observable` from [RxSwift](https://github.com/ReactiveX/RxSwift) framework when authentifying  with [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift).
 
 ## How to use
 This framework provide prefixed functions `rx_` on `OAuth1Swift` and `OAuth2Swift` class
