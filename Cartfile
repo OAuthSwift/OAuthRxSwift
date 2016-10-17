@@ -1,0 +1,3 @@
+
+github "ReactiveX/RxSwift" "3.0.0-beta.2"
+github "OAuthSwift/OAuthSwift"
