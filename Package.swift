@@ -1,3 +1,5 @@
+// swift-tools-version:5.3
+//
 // Package.swift
 /*
  The MIT License (MIT)
@@ -23,8 +25,21 @@ import PackageDescription
 
 let package = Package(
     name: "OAuthRxSwift",
+    products: [
+        .library(
+            name: "OAuthRxSwift",
+            targets: ["OAuthRxSwift"]
+        ),
+    ],
     dependencies: [
-        .Package(url: "https://github.com/OAuthSwift/OAuthSwift.git", majorVersion: 1),
-        .Package(url: "https://github.com/ReactiveX/RxSwift.git", majorVersion: 3),
+      .package(url: "https://github.com/OAuthSwift/OAuthSwift", .upToNextMajor(from: "2.1.2")),
+      .package(url: "https://github.com/ReactiveX/RxSwift", .upToNextMajor(from: "5.1.1")),
+    ],
+    targets: [
+        .target(
+            name: "OAuthRxSwift",
+            dependencies: ["OAuthSwift", "RxSwift"],
+            path: "Sources"
+        ),
     ]
 )
