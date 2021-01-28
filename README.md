@@ -15,7 +15,7 @@ Utility methods to produce `Observable` from [RxSwift](https://github.com/Reacti
 This framework provide prefixed functions `rx_` on `OAuth1Swift` and `OAuth2Swift` class
 
 ```swift
-let observable = oauthSwift.rx_authorize(withCallbackURL: ..)
+let observable = oauthSwift.rx.authorize(withCallbackURL: ..)
 
 ```
 
